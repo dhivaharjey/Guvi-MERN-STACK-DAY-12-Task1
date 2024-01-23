@@ -20,6 +20,8 @@
     - Radio buttons are used for survey about the company and service
   - Text Area
     - It will be used for suggestion for the survey.
+  - Submit Button
+    - Style are added to this button
 
 - The form is responsive and more style are added in this form.
 - Bootstrap is also used for alignment and input boxes only.
