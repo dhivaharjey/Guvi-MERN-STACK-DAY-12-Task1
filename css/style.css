@@ -117,4 +117,7 @@ input[type="radio"] {
     width: 35vw;
     padding: 1em;
   }
+  td:first-child {
+    font-size: 1.6rem;
+  }
 }
