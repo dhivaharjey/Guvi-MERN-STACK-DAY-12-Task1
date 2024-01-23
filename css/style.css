@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding-top: 2vw;
+}
+span {
+  color: red;
+}
+strong {
+  font-size: 1.5em;
+}
+
+.first::after {
+  content: "First";
+  font-weight: bold;
+}
+
+.last::after {
+  content: "Last";
+  font-weight: bold;
+}
+input[type="text"] {
+  padding: 1rem;
+  border: 1px solid black;
+}
+input[type="email"] {
+  border: 1px solid black;
+  padding: 1rem;
+}
+.star {
+  position: relative;
+}
+.stars {
+  visibility: hidden;
+  font-size: 45px;
+  cursor: pointer;
+}
+.stars::before {
+  content: "\2606";
+  position: absolute;
+
+  visibility: visible;
+  top: -20px;
+}
+.stars:checked::before {
+  content: "\2605";
+  color: #ffc107;
+  position: absolute;
+}
+.starText {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+.label-padding {
+  padding: 1.2vw;
+}
+tr:nth-child(2n) {
+  background-color: rgba(146, 143, 138, 0.329);
+}
+.tablee {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0;
+}
+td {
+  padding: 1.5vw;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Times New Roman", Times, serif;
+}
+.table1,
+.table2 {
+  margin: 4vw 0;
+}
+td:first-child {
+  text-align: left;
+}
+input[type="radio"] {
+  display: inline-block;
+  width: 1.3rem;
+  height: 1.2rem;
+}
+#commentBox {
+  width: 100%;
+  height: 20vh;
+  margin-bottom: 2vh;
+  border: 1px solid black;
+}
+#button {
+  padding: 0.25rem;
+  width: 14vw;
+}
+.button-div {
+  margin-bottom: 5vw;
+}
+@media (max-width: 568px) {
+  .hidden {
+    display: none;
+  }
+  tr {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  td::before {
+    content: attr(data-title);
+  }
+  td:first-child {
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+  #button {
+    width: 35vw;
+    padding: 1em;
+  }
+}
