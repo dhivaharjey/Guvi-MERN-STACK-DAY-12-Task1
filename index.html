@@ -35,7 +35,12 @@
           </strong>
         </div>
         <div class="col p-2">
-          <input type="email" class="form-control" aria-label="First name" />
+          <input
+            type="email"
+            class="form-control"
+            aria-label="First name"
+            placeholder="example@gmail.com"
+          />
         </div>
       </form>
       <div class="row">
@@ -48,24 +53,60 @@
           </p>
         </div>
 
-        <div class="star">
-          <input class="stars" type="checkbox" id="star1" name="rating" />
-          <label for="star1" class="label-padding"></label>
-          <input class="stars" type="checkbox" id="star2" name="rating" />
-          <label for="star2" class="label-padding"></label>
-          <input class="stars" type="checkbox" id="star3" name="rating" />
-          <label for="star3" class="label-padding"></label>
-          <input class="stars" type="checkbox" id="star4" name="rating" />
-          <label for="star4" class="label-padding"></label>
-          <input class="stars" type="checkbox" id="star5" name="rating" />
-          <label for="star5" class="label-padding"></label>
-          <p class="starText">
-            Overall, How would you rate your experience with us??
-          </p>
+        <div class="star-rating">
+          <input
+            class="radio-input"
+            type="radio"
+            id="star5"
+            name="star-input"
+            value="5"
+          />
+          <label class="radio-label" class for="star5" title="5 stars">
+            5 stars
+          </label>
+
+          <input
+            class="radio-input"
+            type="radio"
+            id="star4"
+            name="star-input"
+            value="4"
+          />
+          <label class="radio-label" for="star4" title="4 stars">4 stars</label>
+
+          <input
+            class="radio-input"
+            type="radio"
+            id="star3"
+            name="star-input"
+            value="3"
+          />
+          <label class="radio-label" for="star3" title="3 stars">3 stars</label>
+
+          <input
+            class="radio-input"
+            type="radio"
+            id="star2"
+            name="star-input"
+            value="2"
+          />
+          <label class="radio-label" for="star2" title="2 stars">2 stars</label>
+
+          <input
+            class="radio-input"
+            type="radio"
+            id="star1"
+            name="star-input"
+            value="1"
+          />
+          <label class="radio-label" for="star1" title="1 star">1 star</label>
         </div>
+        <p class="starText">
+          Overall, How would you rate your experience with us??
+        </p>
       </div>
       <div class="table1">
-        <p>
+        <p class="tableHeading">
           <strong>
             How satisfied are you with
             <span>&#42;</span>
@@ -84,61 +125,61 @@
           <tr>
             <td>Purchase</td>
             <td data-title="Very Unsatisfied">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="purchaseReview" id="" />
             </td>
             <td data-title="Unsatisfied">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="purchaseReview" id="" />
             </td>
             <td data-title="Neutral">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="purchaseReview" id="" />
             </td>
             <td data-title="Satisfied">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="purchaseReview" id="" />
             </td>
             <td data-title="Very Satisfied">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="purchaseReview" id="" />
             </td>
           </tr>
           <tr>
             <td>Service</td>
             <td data-title="Very Unsatisfied">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="serviceReview" id="" />
             </td>
             <td data-title="Unsatisfied">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="serviceReview" id="" />
             </td>
             <td data-title="Neutral">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="serviceReview" id="" />
             </td>
             <td data-title="Satisfied">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="serviceReview" id="" />
             </td>
             <td data-title="Very Satisfied">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="serviceReview" id="" />
             </td>
           </tr>
           <tr>
             <td>Company Overall</td>
             <td data-title="Very Unsatisfied">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="overallReview" id="" />
             </td>
             <td data-title="Unsatisfied">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="overallReview" id="" />
             </td>
             <td data-title="Neutral">
-              <input type="radio" name="review" />
+              <input type="radio" name="overallReview" />
             </td>
             <td data-title="Satisfied">
-              <input type="radio" name="review" />
+              <input type="radio" name="overallReview" />
             </td>
             <td data-title="Very Satisfied">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="overallReview" id="" />
             </td>
           </tr>
         </table>
       </div>
       <div class="table2">
-        <p>
+        <p class="tableHeading">
           <strong>
             How likely are you to
             <span>&#42;</span>
@@ -156,37 +197,37 @@
           <tr>
             <td>Buy from us again</td>
             <td data-title="Very Unlikely">
-              <input type="radio" name="review" />
+              <input type="radio" name="review1" />
             </td>
-            <td data-title="Unlikely"><input type="radio" name="review" /></td>
-            <td data-title="Neutral"><input type="radio" name="review" /></td>
-            <td data-title="Likely"><input type="radio" name="review" /></td>
+            <td data-title="Unlikely"><input type="radio" name="review1" /></td>
+            <td data-title="Neutral"><input type="radio" name="review1" /></td>
+            <td data-title="Likely"><input type="radio" name="review1" /></td>
             <td data-title="Very Likely">
-              <input type="radio" name="review" id="" />
+              <input type="radio" name="review1" id="" />
             </td>
           </tr>
           <tr>
             <td>Recommond our product to others</td>
             <td data-title="Very Unlikely">
-              <input type="radio" name="review" />
+              <input type="radio" name="review2" />
             </td>
-            <td data-title="Unlikely"><input type="radio" name="review" /></td>
-            <td data-title="Neutral"><input type="radio" name="review" /></td>
-            <td data-title="Likely"><input type="radio" name="review" /></td>
+            <td data-title="Unlikely"><input type="radio" name="review2" /></td>
+            <td data-title="Neutral"><input type="radio" name="review2" /></td>
+            <td data-title="Likely"><input type="radio" name="review2" /></td>
             <td data-title="Very Likely">
-              <input type="radio" name="review" i />
+              <input type="radio" name="review2" i />
             </td>
           </tr>
           <tr>
             <td>Recommond our company to others</td>
             <td data-title="Very Unlikely">
-              <input type="radio" name="review" />
+              <input type="radio" name="review3" />
             </td>
-            <td data-title="Unlikely"><input type="radio" name="review" /></td>
-            <td data-title="Netural"><input type="radio" name="review" /></td>
-            <td data-title="Likely"><input type="radio" name="review" /></td>
+            <td data-title="Unlikely"><input type="radio" name="review3" /></td>
+            <td data-title="Netural"><input type="radio" name="review3" /></td>
+            <td data-title="Likely"><input type="radio" name="review3" /></td>
             <td data-title="Very Likely">
-              <input type="radio" name="review" />
+              <input type="radio" name="review3" />
             </td>
           </tr>
         </table>
