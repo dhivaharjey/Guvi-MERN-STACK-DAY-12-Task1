@@ -2,7 +2,7 @@
 
 ---
 
-## Task 1
+## Task 2
 
 - Survey Form is created based on the given image
   using HTML5,CSS3 and Bootstrap.
